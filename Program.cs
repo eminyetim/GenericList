@@ -4,8 +4,36 @@ namespace GenericList
 {
     class Program
     {
+        
+        public static void PrintArray<Type>(Type[] list)
+        {
+            foreach (var item in list)
+            {
+                System.Console.WriteLine(item);
+            }
+        }
+
         public static void Main(string[] args)
         {
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] intArray = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                intArray[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            
+            n = Convert.ToInt32(Console.ReadLine());
+            string[] stringArray = new string[n];
+            for (int i = 0; i < n; i++)
+            {
+                stringArray[i] = Console.ReadLine();
+            }
+            
+            PrintArray<Int32>(intArray);
+            PrintArray<String>(stringArray);
+
+
+            /*
             List<int> sayiListesi = new List<int>();
             sayiListesi.Add(23);
             sayiListesi.Add(10);
@@ -93,7 +121,7 @@ namespace GenericList
             }
 
             yeniList.Clear();
-            kullanicilarListesi.Clear();
+            kullanicilarListesi.Clear();*/
 
         }
     }
