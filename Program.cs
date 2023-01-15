@@ -46,9 +46,12 @@ namespace GenericList
             //Search
             if(sayiListesi.Contains(10));
                 System.Console.WriteLine("Listede 10 var");
-           
+            
             System.Console.WriteLine("Index Of Mavi :"+renkListesi.BinarySearch("Yeşil"));
           
+            //Converting Array to List
+            string[] Hayvanlar = {"Kedi","Köpek","Kuş"};
+            List<string> hayvanlarListesi = new List<string>();
 
         }
     }
