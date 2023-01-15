@@ -16,13 +16,13 @@ namespace GenericList
 
             List<string> renkListesi = new();
 
-            renkListesi.Add("Kırmızı");
+            renkListesi.Add("Kirmizi");
             renkListesi.Add("Mavi");
             renkListesi.Add("Turuncu");
-            renkListesi.Add("Sarı");
+            renkListesi.Add("Sari");
             renkListesi.Add("Yeşil");
 
-              System.Console.WriteLine("--SayiListesi--");
+            System.Console.WriteLine("--SayiListesi--");
             // foreach (var item in sayiListesi)
             //     System.Console.WriteLine(item);
             sayiListesi.ForEach(sayi => System.Console.WriteLine(sayi));
@@ -32,9 +32,18 @@ namespace GenericList
             //     System.Console.WriteLine();
             renkListesi.ForEach(renk => System.Console.WriteLine(renk));
 
+            sayiListesi.Remove(4);
+            renkListesi.Remove("Sari");
 
+            sayiListesi.RemoveAt(1);
+            renkListesi.RemoveAt(2);
 
+            System.Console.WriteLine("--SayiListesi--");
+            sayiListesi.ForEach(sayi => System.Console.WriteLine(sayi));
+            System.Console.WriteLine("\n--RenkListesi--");
+            renkListesi.ForEach(renk => System.Console.WriteLine(renk));
 
+        
            
           
 
