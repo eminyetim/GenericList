@@ -27,7 +27,7 @@ namespace GenericList
             //     System.Console.WriteLine(item);
             sayiListesi.ForEach(sayi => System.Console.WriteLine(sayi));
             
-            System.Console.WriteLine("\n"--RenkListesi--");
+            System.Console.WriteLine("\n--RenkListesi--");
             // foreach (var item in renkListesi)
             //     System.Console.WriteLine();
             renkListesi.ForEach(renk => System.Console.WriteLine(renk));
