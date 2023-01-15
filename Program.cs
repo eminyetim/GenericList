@@ -22,23 +22,15 @@ namespace GenericList
             renkListesi.Add("Sarı");
             renkListesi.Add("Yeşil");
 
-
-            System.Console.WriteLine(sayiListesi);
-            System.Console.WriteLine(renkListesi);
-
-            System.Console.WriteLine("--SayiListesi--");
+              System.Console.WriteLine("--SayiListesi--");
             // foreach (var item in sayiListesi)
             //     System.Console.WriteLine(item);
             sayiListesi.ForEach(sayi => System.Console.WriteLine(sayi));
             
-            System.Console.WriteLine("\n--RenkListesi--");
+            System.Console.WriteLine("\n"--RenkListesi--");
             // foreach (var item in renkListesi)
             //     System.Console.WriteLine();
             renkListesi.ForEach(renk => System.Console.WriteLine(renk));
-
-            
-
-
 
 
 
