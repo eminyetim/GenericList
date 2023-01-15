@@ -43,8 +43,11 @@ namespace GenericList
             System.Console.WriteLine("\n--RenkListesi--");
             renkListesi.ForEach(renk => System.Console.WriteLine(renk));
 
-        
+            //Search
+            if(sayiListesi.Contains(10));
+                System.Console.WriteLine("Listede 10 var");
            
+            System.Console.WriteLine("Index Of Mavi :"+renkListesi.BinarySearch("Yeşil"));
           
 
         }
